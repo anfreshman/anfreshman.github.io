@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <!--
+
+        disabled与readonly控件共同点是均不能修改
+        但是disabled无法提交（即使有name），而readonly可以提交
+        -->
+
+        <!--table，tr新建一行，td新建一列-->
+        <table border="1px" >
+            <tr>
+                <td>
+                    <input type="text" name="1" value="1" disabled>
+                </td>
+                <td>
+                    <input type="text" name="2" value="2" readonly>
+                </td>
+                <td  height=100%><!--设置框内能输入的最大字符数-->
+                    <input type="text" name="3" maxlength="5">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                哈哈
+                </td>
+                <td>
+                <a href="www.baidu.com">哈哈</a>
+                </td>
+                <td rowspan="2">
+                    <input type="button" value="按钮">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    哈哈
+                </td>
+                <td>
+                    哈哈
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    哈哈
+                </td>
+                <td colspan="2">
+                    哈哈
+                </td>
+            </tr>
+        </table>
+
+
+
+
+    </form>
+
+</body>
+</html>
